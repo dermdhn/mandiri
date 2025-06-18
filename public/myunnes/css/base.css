@@ -1,0 +1,42 @@
+.base-side-menu {
+    bottom: 70px !important;
+    top: 0 !important;
+}
+.img-fill {
+    object-fit: cover;
+}
+.pdl-1{
+    padding-left:1em;
+}
+.pdl-2{
+    padding-left:2em;
+}
+.pdl-3{
+    padding-left:3em;
+}
+.pdl-4{
+    padding-left:4em;
+}
+.pdl-5{
+    padding-left:5em;
+}
+.pdl-6{
+    padding-left:6em;
+}
+.pdl-7{
+    padding-left:7em;
+}
+.pdl-8{
+    padding-left:8em;
+}
+.pdl-9{
+    padding-left:9em;
+}
+.pdl-10{
+    padding-left:10em;
+}
+.table-responsive .dropdown,
+.table-responsive .btn-group,
+.table-responsive .btn-group-vertical {
+    position: static;
+}
