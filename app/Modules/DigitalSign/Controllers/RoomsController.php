@@ -51,7 +51,7 @@ class RoomsController extends BaseController
     protected $help;
     protected $app;
     protected $table_columns = [
-        'floor_id' => 'Floor Id',
+        // 'floor_id' => 'Floor Id',
 			'nama' => 'Nama',
 			'order' => 'Order',
 			'is_active' => 'Is Active',
@@ -85,12 +85,14 @@ class RoomsController extends BaseController
             ]
         ];
 
+        $floor_id = request()->get('floor_id');
+
         $this->form = [
             'floor_id' => [
-                'Floor Id',
+                '',
                 [
-                    ['Form', 'number'],
-                    ['floor_id', NULL, ['class' => 'form-control ', 'id' => 'floor_id', 'placeholder' => 'ex: isikan data di sini']]
+                    ['Form', 'hidden'],
+                    ['floor_id', $floor_id ?? '', ['class' => 'form-control', 'id' => 'floor_id']]
                 ]
             ],
             'nama' => [
@@ -111,7 +113,7 @@ class RoomsController extends BaseController
                 'Is Active',
                 [
                     ['Form', 'select'],
-                    ['is_Active', $this->help->comboBool('tampil'), NULL, ['class' => 'form-control', 'id' => 'is_Active']]
+                    ['is_active', $this->help->comboBool('tampil'), NULL, ['class' => 'form-control', 'id' => 'is_active']]
                 ]
             ],
         ];

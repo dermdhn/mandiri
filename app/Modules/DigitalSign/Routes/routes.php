@@ -3,6 +3,22 @@
 use Illuminate\Support\Facades\Route;
 use App\Modules\DigitalSign\Controllers\TestController;
 
+Route::get('/portrait', function () {
+    return view('DigitalSign::1');
+});
+
+// Route::get('/portrait2', function () {
+//     return view('DigitalSign::portrait2');
+// });
+
+// Route::get('/portrait3', function () {
+//     return view('DigitalSign::portrait3');
+// });
+
+// Route::get('/portrait4', function () {
+//     return view('DigitalSign::portrait4');
+// });
+
 /**
  * Dashboard
  */
